@@ -190,13 +190,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'dfu_1mm': {
-      title: 'ProHeal® Bioactive Matrix + MatriDerm® 1mm',
-      sub: 'Diabetic Foot Ulcer Bed Regeneration & Closure Protocol',
+      title: 'MatriDerm® 1mm Diabetic Foot Ulcer Protocol',
+      sub: 'Dermal Matrix Bed Regeneration & Soft-Tissue Closure Protocol',
       tip: 'Ensure thorough debridement and off-loading before applying matrix. Promotes granulation over exposed tendon and periosteum.',
       specs: [
         'Stimulates capillary budding and activates native fibroblast deposition.',
         'Protects exposed tendons and prevents deep osteomyelitis progression.',
-        'Exudate-balancing bioactive matrix maintains optimal moist healing environment.',
+        'Acellular dermal scaffold creates a stable vascularized neodermis bed.',
         'Substantially shortens chronic closure time and mitigates limb amputation risk.'
       ]
     },
@@ -212,13 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'dfu_fenestrated': {
-      title: 'ProHeal® Drainage Matrix & Fenestrated Template',
-      sub: 'Exudative Ulcer Management & Granulation Protocol',
-      tip: 'Recommended when moderate-to-heavy wound drainage is present in infected or neuropathic wounds.',
+      title: 'MatriDerm® Fenestrated Exudative Bed Protocol',
+      sub: 'High Exudate Diabetic Ulcer Drainage & Granulation Protocol',
+      tip: 'Recommended when moderate-to-heavy wound drainage is present in complex neuropathic or post-debridement wounds.',
       specs: [
-        'Facilitates high moisture vapor transmission rate (MVTR).',
-        'Prevents maceration of periwound skin edges.',
-        'Combats bacterial colonization via sustained matrix hydration.',
+        'Precision micro-fenestrations facilitate rapid drainage of wound exudate.',
+        'Prevents maceration of fragile periwound skin edges.',
+        'Promotes active cell migration and neovascularization across the ulcer bed.',
         'Accelerates epithelial advancement from the wound borders.'
       ]
     },
@@ -475,44 +475,6 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="https://www.grhindia.in/_files/ugd/ce3761_a36e5cb9407449dc8cbafab056f4dfc0.pdf" target="_blank" rel="noopener" class="btn btn-navy" style="font-size: 0.875rem;">
             <i class="fas fa-book"></i> View Clinical Bibliography (150+ Papers)
           </a>
-        </div>
-      `
-    },
-    proheal: {
-      title: 'ProHeal® Advanced Wound Management — Clinical Overview',
-      sub: 'Bioactive Matrix & Moisture Balance for Chronic Refractory Wounds',
-      html: `
-        <div style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid #e2e8f0;">
-          <img src="assets/matriderm-post.jpeg" style="max-height: 80px; width: 80px; object-fit: cover; border-radius: 8px;">
-          <div>
-            <h4 style="color: var(--navy); font-size: 1.15rem; font-weight: 800;">Targeted Healing for Complex & Stagnant Wounds</h4>
-            <span style="font-size: 0.8125rem; color: #0284c7; font-weight: 700;"><i class="fas fa-shield-alt"></i> Distributed Nationally by GRH India</span>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-          <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Mechanism</strong>
-            <span style="font-size: 0.875rem; color: #475569;">Matrix Metalloproteinase (MMP) Modulation</span>
-          </div>
-          <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Target Outcomes</strong>
-            <span style="font-size: 0.875rem; color: #475569;">Granulation Tissue Proliferation & Edge Advancement</span>
-          </div>
-        </div>
-
-        <h5 style="color: var(--navy); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Clinical Benefits</h5>
-        <ul style="list-style: disc; padding-left: 1.25rem; color: #475569; font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">
-          <li>Transforms non-healing stagnant wounds back into active proliferative phase.</li>
-          <li>Maintains moisture equilibrium and regulates heavy exudate discharge.</li>
-          <li>Atraumatic removal significantly improves patient comfort during dressing changes.</li>
-          <li>Cost-effective institutional options with the new 5% GST rate applied.</li>
-        </ul>
-
-        <div style="display: flex; gap: 1rem;">
-          <button class="btn btn-teal" style="font-size: 0.875rem;" onclick="requestProductQuote('ProHeal®')">
-            <i class="fas fa-handshake"></i> Request Clinical Evaluation Kit
-          </button>
         </div>
       `
     },

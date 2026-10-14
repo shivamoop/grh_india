@@ -845,7 +845,7 @@ img {
 }
 
 /* ==========================================================================
-   FLAGSHIP PRODUCTS (MATRIDERM & PROHEAL)
+   FLAGSHIP PRODUCTS (MATRIDERM & NATROX O2)
    ========================================================================== */
 .flagship-section {
   background: #ffffff;
@@ -900,8 +900,8 @@ img {
 
 .flagship-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem;
 }
 
 .flagship-card {

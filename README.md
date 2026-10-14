@@ -1,6 +1,6 @@
 # GR Healthaids Pvt. Ltd. (GRH) — Official Website
 
-Official corporate website for **GR Healthaids Pvt. Ltd.** (also referred to as **GRH**), India's premier national healthcare distributor since 1990 and official exclusive distributor of **MatriDerm®** (MedSkin Solutions Dr. Suwelack AG, Germany) and **ProHeal®** advanced wound care solutions.
+Official corporate website for **GR Healthaids Pvt. Ltd.** (also referred to as **GRH**), India's premier national healthcare distributor since 1990 and official exclusive distributor of **MatriDerm®** (MedSkin Solutions Dr. Suwelack AG, Germany) and **NATROX® O₂** Continuous Topical Oxygen Therapy (cTOT) device (Inotec AMD Ltd, Cambridge, UK & USA).
 
 ## Tech Stack
 - **HTML5**: Semantic, accessible markup (`index.html`)
@@ -11,7 +11,7 @@ Official corporate website for **GR Healthaids Pvt. Ltd.** (also referred to as 
 ## Key Sections
 1. **Header & Sticky Navbar**: Full-width responsive navigation with corporate branding and extreme-right clinical action buttons.
 2. **Hero Section**: 3D glass card featuring the official MatriDerm® Germany distributor verification badge.
-3. **Flagship Products**: Comprehensive monographs for MatriDerm® Dermal Matrix and ProHeal® Collagen Dressing.
+3. **Flagship Products**: Comprehensive monographs for MatriDerm® Dermal Matrix and NATROX® O₂ Continuous Topical Oxygen Therapy device.
 4. **Clinical Triage Matcher**: Interactive wound-depth & indication diagnostic matching tool.
 5. **Solutions Portfolio**: Six specialized healthcare product verticals.
 6. **Heritage Timeline**: 35+ years journey from 1990 founding to nationwide presence.
