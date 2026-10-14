@@ -441,39 +441,57 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDatabase = {
     matriderm: {
       title: 'MatriDerm® Dermal Matrix — Complete Clinical Monograph',
-      sub: 'MedSkin Solutions Dr. Suwelack AG (Germany) & GRH India Distribution',
+      sub: 'MedSkin Solutions Dr. Suwelack AG (Germany) • National Distributor: GR Healthaids Pvt. Ltd.',
       html: `
         <div style="display: flex; gap: 1.5rem; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap;">
-          <img src="assets/grh_official_distributor_matriderm_clean_light.png" alt="GRH Official Distributor of MatriDerm in India" style="max-height: 52px; width: auto; object-fit: contain;">
-          <img src="assets/hex-portfolio-matriderm-classic_2021-05-20-142453.webp" style="max-height: 60px; width: auto; object-fit: contain;">
+          <img src="assets/grh_official_distributor_matriderm_clean_light.png" alt="GRH Official Distributor of MatriDerm in India" style="max-height: 48px; width: auto; object-fit: contain;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: rgba(30,184,201,0.12); color: var(--teal); border: 1px solid rgba(30,184,201,0.3); padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;">
+              <i class="fas fa-certificate"></i> Exclusive India Distributor
+            </span>
+            <span style="background: #f1f5f9; color: var(--navy); border: 1px solid #cbd5e1; padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;">
+              <i class="fas fa-shield-halved"></i> CDSCO Regulated
+            </span>
+          </div>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
           <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
             <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Available Thicknesses</strong>
-            <span style="font-size: 0.875rem; color: #475569;">1 mm (Classic), 2 mm, Fenestrated, Flex</span>
+            <span style="font-size: 0.875rem; color: #475569;">1 mm (Classic), 2 mm, Fenestrated, Flex Formats</span>
           </div>
           <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Composition</strong>
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Patented Technology</strong>
+            <span style="font-size: 0.875rem; color: #475569;">Advanced CryoSafe® Method (No Chemical Cross-Linking)</span>
+          </div>
+          <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Surgical Procedure</strong>
+            <span style="font-size: 0.875rem; color: #475569;">One-Step & Multi-Step Dermal Reconstruction</span>
+          </div>
+          <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Biological Composition</strong>
             <span style="font-size: 0.875rem; color: #475569;">Native Bovine Collagen Types I, III, V + Alpha-Elastin</span>
           </div>
         </div>
 
-        <h5 style="color: var(--navy); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Key Clinical Indications</h5>
+        <h5 style="color: var(--navy); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Scientific Rationale & Proven Benefits (MatriDerm.com)</h5>
         <ul style="list-style: disc; padding-left: 1.25rem; color: #475569; font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">
-          <li>Severe thermal injuries & full-thickness burn excision.</li>
-          <li>Burn scar contracture releases across flexor joints, neck, and hands.</li>
-          <li>Reconstructive surgery following oncological skin cancer excision.</li>
-          <li>Degloving trauma injuries with exposed tendon or bone periosteum.</li>
-          <li>Refractory chronic diabetic foot and venous stasis ulcers.</li>
+          <li><strong>Preserves Natural Skin Closeness:</strong> CryoSafe® preservation maintains native structural hierarchy with high open porosity.</li>
+          <li><strong>Accelerates Revascularization:</strong> Rapidly stimulates host capillary invasion and functional neodermis formation (Schmidt et al., <em>Ann Plast Surg</em> 2017).</li>
+          <li><strong>Limits Wound Contraction:</strong> Inhibits α-SMA myofibroblast differentiation, dramatically reducing hyper-contracture and scarring (Dill & Moergelin, <em>Int Wound J</em> 2020).</li>
+          <li><strong>True One-Step Grafting:</strong> Enables simultaneous application of MatriDerm with a split-thickness skin graft (STSG), saving OR time and donor morbidity.</li>
+          <li><strong>Proven in Chronic Ulcers:</strong> Accelerates healing and closure in complex diabetic foot ulcers and hard-to-heal wounds (Jeon et al., <em>Arch Plast Surg</em> 2013).</li>
         </ul>
 
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="https://www.grhindia.in/_files/ugd/ce3761_f377b43b07f4446da9f1e68eb15dfe5a.pdf" target="_blank" rel="noopener" class="btn btn-teal" style="font-size: 0.875rem;">
-            <i class="fas fa-file-pdf"></i> Download Official Brochure
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://matriderm.com/" target="_blank" rel="noopener" class="btn btn-teal" style="font-size: 0.875rem;">
+            <i class="fas fa-external-link-alt"></i> Visit Official MatriDerm.com
           </a>
-          <a href="https://www.grhindia.in/_files/ugd/ce3761_a36e5cb9407449dc8cbafab056f4dfc0.pdf" target="_blank" rel="noopener" class="btn btn-navy" style="font-size: 0.875rem;">
-            <i class="fas fa-book"></i> View Clinical Bibliography (150+ Papers)
+          <a href="https://www.grhindia.in/_files/ugd/ce3761_f377b43b07f4446da9f1e68eb15dfe5a.pdf" target="_blank" rel="noopener" class="btn btn-navy" style="font-size: 0.875rem;">
+            <i class="fas fa-file-pdf"></i> Download Brochure
+          </a>
+          <a href="https://www.grhindia.in/_files/ugd/ce3761_a36e5cb9407449dc8cbafab056f4dfc0.pdf" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.875rem; border-color: var(--navy); color: var(--navy);">
+            <i class="fas fa-book"></i> Bibliography (150+ Papers)
           </a>
         </div>
       `

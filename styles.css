@@ -922,50 +922,77 @@ img {
 }
 
 .flagship-card-media {
-  background: var(--navy);
-  position: relative;
-  padding: 2.5rem 2rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1.5rem 1.75rem 1.75rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  position: relative;
   overflow: hidden;
 }
 
-.flagship-img {
-  max-height: 220px;
-  object-fit: contain;
-  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.25));
-  transition: transform var(--transition-smooth);
-}
-
-.flagship-card:hover .flagship-img {
-  transform: scale(1.05);
+.flagship-media-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 2;
 }
 
 .flagship-badge {
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
+  position: static;
   background: var(--teal);
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 700;
-  padding: 0.35rem 0.85rem;
+  padding: 0.4rem 0.85rem;
   border-radius: var(--radius-pill);
-  box-shadow: 0 4px 10px rgba(30, 184, 201, 0.4);
+  box-shadow: 0 4px 10px rgba(30, 184, 201, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .flagship-origin {
-  position: absolute;
-  bottom: 1.25rem;
-  right: 1.25rem;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
+  position: static;
+  background: rgba(26, 69, 120, 0.08);
+  border: 1px solid rgba(26, 69, 120, 0.15);
+  color: var(--navy);
   font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.3rem 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.8rem;
   border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.flagship-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+  max-height: 230px;
+  position: relative;
+  z-index: 1;
+}
+
+.flagship-img {
+  max-height: 210px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 20px rgba(26, 69, 120, 0.15));
+  transition: transform var(--transition-smooth);
+}
+
+.flagship-card:hover .flagship-img {
+  transform: scale(1.04);
 }
 
 .flagship-body {
@@ -1025,10 +1052,11 @@ img {
 .flagship-footer-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   margin-top: auto;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border-light);
+  flex-wrap: wrap;
 }
 
 /* ==========================================================================
