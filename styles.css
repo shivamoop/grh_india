@@ -1439,11 +1439,31 @@ img {
   background: var(--teal);
 }
 
-.milestone-year {
-  font-size: 1.35rem;
+.milestone-stage {
+  font-size: 0.8125rem;
   font-weight: 800;
   color: var(--teal);
-  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: rgba(30, 184, 201, 0.12);
+  border: 1px solid rgba(30, 184, 201, 0.35);
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  transition: all var(--transition-fast);
+}
+
+.milestone-node:hover .milestone-stage {
+  background: var(--teal);
+  color: #ffffff;
+  border-color: var(--teal);
+  box-shadow: 0 4px 14px rgba(30, 184, 201, 0.45);
+  transform: translateY(-2px);
+}
+
+.milestone-year {
+  display: none;
 }
 
 .milestone-title {
