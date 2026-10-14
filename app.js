@@ -222,6 +222,39 @@ document.addEventListener('DOMContentLoaded', () => {
         'Accelerates epithelial advancement from the wound borders.'
       ]
     },
+    'natrox_ctot_1mm': {
+      title: 'NATROX® O₂ Continuous Topical Oxygen Therapy (cTOT)',
+      sub: 'Active Humidified O₂ Delivery (13 ml/hr) for Stalled Chronic Ulcers',
+      tip: 'Place the sterile Oxygen Delivery System (ODS) directly over the debrided wound bed beneath standard dressing. 24/7 continuous oxygen delivery stimulates angiogenesis and overcomes chronic tissue hypoxia.',
+      specs: [
+        'Delivers continuous 98% pure humidified oxygen (13 ml/hr) directly to wound tissue 24/7.',
+        'Achieved 71% healing rate in multi-center RCT trials for refractory diabetic foot ulcers.',
+        'Portable, lightweight (140g) wearable device operates completely silently.',
+        'UK NICE Medtech Innovation Briefing (MIB208) clinically validated technology.'
+      ]
+    },
+    'natrox_ctot_2mm': {
+      title: 'NATROX® O₂ Deep Tissue & Cavity Ulcer Protocol',
+      sub: 'Severe Hypoxic Plantar & Cavity Defect Oxygenation',
+      tip: 'For deep ulcers, use NATROX® O₂ in combination with moist wound padding or MatriDerm to accelerate granulation in low-perfusion wound beds.',
+      specs: [
+        'Overcomes deep tissue microvascular hypoxia in ischemic and neuropathic ulcers.',
+        'Accelerates collagen synthesis, fibroblast proliferation, and native bacterial defense.',
+        'Dual rechargeable smart batteries swapped seamlessly once every 24 hours.',
+        'Significant reduction in chronic wound pain reported across clinical cohorts.'
+      ]
+    },
+    'natrox_ctot_fenestrated': {
+      title: 'NATROX® O₂ Continuous cTOT with Exudate Management',
+      sub: 'Exudative Ulcers, Venous Stasis & Dehiscent Wounds',
+      tip: 'The flexible ODS ring allows exudate to pass freely into secondary absorbent foam or dressing while oxygen diffuses uniformly into the wound base.',
+      specs: [
+        'Non-adherent silicone ODS allows fluid to pass into secondary dressing without disturbing therapy.',
+        'Fully compatible with standard compression therapy for venous leg ulcers (VLUs).',
+        'Significantly reduces biofilm burden and promotes edge advancement.',
+        'Distributed and clinically supported nationwide by GR Healthaids Pvt. Ltd.'
+      ]
+    },
     'reconstruction_1mm': {
       title: 'MatriDerm® 1mm Aesthetic Reconstruction Matrix',
       sub: 'Burn Scar Contracture Release & Oncologic Defect Reconstruction',
@@ -479,6 +512,75 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="display: flex; gap: 1rem;">
           <button class="btn btn-teal" style="font-size: 0.875rem;" onclick="requestProductQuote('ProHeal®')">
             <i class="fas fa-handshake"></i> Request Clinical Evaluation Kit
+          </button>
+        </div>
+      `
+    },
+    natrox: {
+      title: 'NATROX® O₂ Continuous Topical Oxygen Therapy (cTOT)',
+      sub: 'Inotec AMD Ltd (Cambridge, UK & USA) • National Distributor: GR Healthaids Pvt. Ltd.',
+      html: `
+        <div style="display: flex; gap: 1.5rem; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap;">
+          <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="max-height: 48px; width: auto; object-fit: contain;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: rgba(30,184,201,0.12); color: var(--teal); border: 1px solid rgba(30,184,201,0.3); padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;">
+              <i class="fas fa-certificate"></i> Official India Distributor
+            </span>
+            <span style="background: #f1f5f9; color: var(--navy); border: 1px solid #cbd5e1; padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;">
+              <i class="fas fa-shield-halved"></i> CDSCO Regulated
+            </span>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1.25rem; align-items: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+          <img src="assets/natrox-in-hand.png" alt="NATROX O2 Device in Hand" style="max-height: 110px; width: auto; object-fit: contain; border-radius: 8px;">
+          <div style="flex: 1; min-width: 200px;">
+            <h4 style="color: var(--navy); font-size: 1.1rem; font-weight: 800; margin-bottom: 0.25rem;">Continuous Humidified Oxygen (13 ml/hr)</h4>
+            <p style="font-size: 0.8125rem; color: #64748b; line-height: 1.5; margin: 0;">
+              An electrochemical generator produces continuous 98% pure oxygen from ambient air, delivering it directly to the wound base via a flexible, sterile Oxygen Delivery System (ODS) ring.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.85rem; margin-bottom: 1.5rem;">
+          <div style="background: #f8fafc; padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Therapy Delivery</strong>
+            <span style="font-size: 0.875rem; color: #475569;">Continuous Topical Oxygen Therapy (cTOT) 24/7</span>
+          </div>
+          <div style="background: #f8fafc; padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Oxygen Flow Rate</strong>
+            <span style="font-size: 0.875rem; color: #475569;">13 ml/hour flow rate, ≥98% pure humidified O₂</span>
+          </div>
+          <div style="background: #f8fafc; padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Device Portability</strong>
+            <span style="font-size: 0.875rem; color: #475569;">~140g wearable, completely silent & pocketable</span>
+          </div>
+          <div style="background: #f8fafc; padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <strong style="font-size: 0.8125rem; color: var(--navy); display: block;">Power Source</strong>
+            <span style="font-size: 0.875rem; color: #475569;">Dual smart Li-ion batteries (24-hour swap cycle)</span>
+          </div>
+        </div>
+
+        <h5 style="color: var(--navy); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Clinical Indications & Mechanism</h5>
+        <ul style="list-style: disc; padding-left: 1.25rem; color: #475569; font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem;">
+          <li><strong>Diabetic Foot Ulcers (DFUs):</strong> Reverses persistent wound hypoxia, stimulates neovascularization, and reduces amputation risks.</li>
+          <li><strong>Venous Leg Ulcers (VLUs):</strong> Seamlessly compatible under standard multi-layer compression bandages.</li>
+          <li><strong>Refractory Non-Healing Wounds:</strong> Overcomes stagnation in non-responsive chronic wounds where standard of care has failed.</li>
+          <li><strong>Post-Surgical Dehiscent Wounds:</strong> Accelerates granulation and closure in surgical wounds with compromised healing.</li>
+          <li><strong>Pressure Injuries (Stages II–IV):</strong> Speeds up healing and relieves chronic wound-associated pain.</li>
+        </ul>
+
+        <h5 style="color: var(--navy); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Clinical Trial Validation (NICE Guidance MIB208)</h5>
+        <p style="font-size: 0.875rem; color: #475569; line-height: 1.6; margin-bottom: 1.5rem;">
+          Evaluated by the UK National Institute for Health and Care Excellence (<strong>NICE Medtech Innovation Briefing MIB208</strong>). A gold-standard multi-centre RCT published in the <em>Journal of Wound Care</em> demonstrated a <strong>71% healing rate</strong> in the NATROX® group vs 36% in the placebo group for non-healing chronic diabetic foot ulcers.
+        </p>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://www.natroxwoundcare.com/" target="_blank" rel="noopener" class="btn btn-teal" style="font-size: 0.875rem;">
+            <i class="fas fa-external-link-alt"></i> Visit NATROX® Global Official Site
+          </a>
+          <button class="btn btn-navy" style="font-size: 0.875rem;" onclick="closeSpecModal(); requestProductQuote('NATROX® O2 Continuous Topical Oxygen Therapy');">
+            <i class="fas fa-file-invoice"></i> Request Hospital Trial / Demo
           </button>
         </div>
       `
