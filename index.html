@@ -55,9 +55,9 @@
       <!-- Desktop Navigation Menu (Exact Mapping: Home, About Us, Solution, Product, Network, Contact us, Clinical Specs) -->
       <ul class="nav-menu">
         <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#timeline" class="nav-link">About Us</a></li>
-        <li><a href="#portfolio" class="nav-link">Solution</a></li>
-        <li><a href="#flagship" class="nav-link">Product</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#solution" class="nav-link">Solution</a></li>
+        <li><a href="#product" class="nav-link">Product</a></li>
         <li><a href="#network" class="nav-link">Network</a></li>
         <li><a href="#contact" class="nav-link">Contact us</a></li>
         <li><a href="javascript:void(0)" class="nav-link nav-spec-link" id="quick-spec-btn" onclick="openSpecModal('matriderm')"><i class="fas fa-file-medical"></i> Clinical Specs</a></li>
@@ -81,9 +81,9 @@
   <div class="mobile-drawer" id="mobile-drawer">
     <button class="mobile-close" id="mobile-close-btn">&times;</button>
     <a href="#hero" class="mobile-nav-item">Home</a>
-    <a href="#timeline" class="mobile-nav-item">About Us</a>
-    <a href="#portfolio" class="mobile-nav-item">Solution</a>
-    <a href="#flagship" class="mobile-nav-item">Product</a>
+    <a href="#about" class="mobile-nav-item">About Us</a>
+    <a href="#solution" class="mobile-nav-item">Solution</a>
+    <a href="#product" class="mobile-nav-item">Product</a>
     <a href="#network" class="mobile-nav-item">Network</a>
     <a href="#contact" class="mobile-nav-item">Contact us</a>
     <a href="javascript:void(0)" class="mobile-nav-item" id="mobile-spec-btn" onclick="openSpecModal('matriderm'); document.getElementById('mobile-drawer').classList.remove('active'); document.body.style.overflow='';"><i class="fas fa-file-medical text-teal"></i> Clinical Specs</a>
@@ -269,148 +269,210 @@
   </section>
 
   <!-- ========================================================================
-       FLAGSHIP PRODUCTS: MATRIDERM & NATROX O2
+       ABOUT US (ENTERPRISE EXPANSION & HERITAGE)
        ======================================================================== -->
-  <section class="section-padding flagship-section" id="flagship">
+  <section class="section-padding timeline-section" id="about">
+    <a id="timeline"></a>
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">
-          <i class="fas fa-layer-group"></i> Flagship Medical Portfolio
+        <span class="section-tag" style="background: rgba(255,255,255,0.1); color: var(--teal); border-color: rgba(30,184,201,0.4);">
+          <i class="fas fa-chart-line"></i> Enterprise Expansion Stages
         </span>
-        <h2 class="section-title">Gold Standard Solutions for Tissue & Wound Reconstruction</h2>
+        <h2 class="section-title">Strategic Growth & National Expansion Journey</h2>
         <p class="section-desc">
-          Empowering plastic surgeons, burn specialists, and surgical teams with clinically validated dermal matrices and continuous topical oxygen therapy (cTOT) healing systems.
+          From our founding inception to our standing as a national-level enterprise, discover our commitment to improving patients' lives across every stage of growth.
         </p>
       </div>
 
-      <!-- Official MatriDerm & NATROX O2 Distribution Credentials Showcase -->
-      <div class="credentials-showcase">
-        <div class="credentials-showcase-left">
-          <div class="credentials-logos-group">
-            <div class="credentials-logo-box">
-              <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="height: 32px; width: auto; max-width: 180px; object-fit: contain;">
+      <div class="timeline-wrapper">
+        <div class="timeline-track-line">
+          <div class="timeline-track-progress"></div>
+        </div>
+
+        <div class="timeline-milestones-grid">
+          <!-- Stage 01 -->
+          <div class="milestone-node">
+            <div class="milestone-dot">
+              <i class="fas fa-flag text-teal" style="font-size: 0.75rem;"></i>
             </div>
-            <div class="credentials-logo-box">
-              <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="height: 36px; width: auto; max-width: 170px; object-fit: contain;">
-            </div>
-          </div>
-          <div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-              <span class="pulse-dot"></span>
-              <span style="font-size: 0.75rem; font-weight: 800; color: var(--teal); text-transform: uppercase; letter-spacing: 1px;">Official Pan-India Exclusive & National Distribution</span>
-            </div>
-            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--navy); margin-top: 3px;">
-              Official National Distributor of MatriDerm® & NATROX® O₂ Device in India
-            </h3>
-            <p style="font-size: 0.8125rem; color: #64748b; margin-top: 2px;">
-              MedSkin Solutions Dr. Suwelack AG (Germany) & Inotec AMD Ltd (Cambridge, UK & USA) &bull; Distributed Nationwide by GR Healthaids Pvt. Ltd.
+            <div class="milestone-stage">Stage 01</div>
+            <h4 class="milestone-title">Founding Inception</h4>
+            <p class="milestone-desc">
+              GR Healthaids Pvt. Ltd. founded in New Delhi with a mission to bring world-class healthcare tools to Indian practitioners.
             </p>
           </div>
-        </div>
-        <div class="credentials-showcase-actions">
-          <span style="background: rgba(30, 184, 201, 0.1); color: var(--teal); border: 1px solid rgba(30, 184, 201, 0.3); padding: 0.45rem 0.95rem; border-radius: var(--radius-pill); font-size: 0.8125rem; font-weight: 700;">
-            <i class="fas fa-certificate"></i> CDSCO Regulated Importer
-          </span>
-          <button class="btn btn-teal" style="padding: 0.5rem 1rem; font-size: 0.8125rem;" onclick="openSpecModal('matriderm')">
-            <i class="fas fa-layer-group"></i> MatriDerm® Specs
-          </button>
-          <button class="btn btn-navy" style="padding: 0.5rem 1rem; font-size: 0.8125rem;" onclick="openSpecModal('natrox')">
-            <i class="fas fa-lungs"></i> NATROX® O₂ Specs
-          </button>
+
+          <!-- Stage 02 -->
+          <div class="milestone-node">
+            <div class="milestone-dot">
+              <i class="fas fa-hospital text-teal" style="font-size: 0.75rem;"></i>
+            </div>
+            <div class="milestone-stage">Stage 02</div>
+            <h4 class="milestone-title">Hospital Network Expansion</h4>
+            <p class="milestone-desc">
+              Established pan-India distribution supplying government apex institutions, premier trusts, and armed forces medical facilities.
+            </p>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="milestone-node">
+            <div class="milestone-dot">
+              <i class="fas fa-handshake text-teal" style="font-size: 0.75rem;"></i>
+            </div>
+            <div class="milestone-stage">Stage 03</div>
+            <h4 class="milestone-title">MatriDerm® Partnership</h4>
+            <p class="milestone-desc">
+              Became the authorized partner and distributor of MatriDerm® (Germany), transforming burn and reconstructive care across India.
+            </p>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="milestone-node">
+            <div class="milestone-dot">
+              <i class="fas fa-lungs text-teal" style="font-size: 0.75rem;"></i>
+            </div>
+            <div class="milestone-stage">Stage 04</div>
+            <h4 class="milestone-title">NATROX® O₂ Partnership</h4>
+            <p class="milestone-desc">
+              Appointed official national distributor in India for NATROX® O₂ (Inotec AMD Ltd, Cambridge, UK), introducing continuous topical oxygen therapy (cTOT) for refractory chronic wounds.
+            </p>
+          </div>
+
+          <!-- Stage 05 -->
+          <div class="milestone-node">
+            <div class="milestone-dot" style="background: var(--teal); border-color: #ffffff;">
+              <i class="fas fa-star text-white" style="font-size: 0.75rem;"></i>
+            </div>
+            <div class="milestone-stage">Stage 05</div>
+            <h4 class="milestone-title">Digital Era Enterprise</h4>
+            <p class="milestone-desc">
+              Over 50+ multinational partner brands, championing CDSCO 5% GST reform, with seamless digital hospital fulfillment.
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="flagship-grid">
-        <!-- MatriDerm Flagship Card -->
-        <div class="flagship-card" id="card-matriderm" style="border-color: rgba(26, 69, 120, 0.25); box-shadow: 0 10px 25px -5px rgba(26, 69, 120, 0.1);">
-          <div class="flagship-card-media">
-            <div class="flagship-media-header">
-              <span class="flagship-badge">
-                <i class="fas fa-crown"></i> Exclusive Official Distributor
-              </span>
-              <span class="flagship-origin">
-                <i class="fas fa-globe-europe"></i> MedSkin Solutions, Germany
-              </span>
-            </div>
-            <div class="flagship-img-container">
-              <img src="assets/hex-portfolio-matriderm-classic_2021-05-20-142453.webp" alt="MatriDerm Dermal Matrix System" class="flagship-img">
-            </div>
+  <!-- ========================================================================
+       SOLUTIONS & MEDICAL PORTFOLIO (ENTERPRISE PILLARS)
+       ======================================================================== -->
+  <section class="section-padding portfolio-section" id="solution">
+    <a id="portfolio"></a>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fas fa-hospital-user"></i> Enterprise Spectrum
+        </span>
+        <h2 class="section-title">Comprehensive Medical Solutions & Services</h2>
+        <p class="section-desc">
+          Supplying hospitals, surgical suites, and medical professionals nationwide as trusted collaborative partners to multinational manufacturers.
+        </p>
+      </div>
+
+      <!-- Filterable Pills -->
+      <div class="filter-pill-container">
+        <button class="filter-btn active" data-filter="all">All Solutions (6)</button>
+        <button class="filter-btn" data-filter="matrix">Dermal Matrices</button>
+        <button class="filter-btn" data-filter="wound">Wound Therapeutics</button>
+        <button class="filter-btn" data-filter="hospital">Hospital Solutions</button>
+        <button class="filter-btn" data-filter="support">Clinical Training & Support</button>
+      </div>
+
+      <!-- Portfolio Cards Grid -->
+      <div class="portfolio-grid">
+        <!-- Item 1 -->
+        <div class="portfolio-card" data-category="matrix">
+          <div class="card-icon-box">
+            <i class="fas fa-dna"></i>
           </div>
-          <div class="flagship-body">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
-              <h3 class="flagship-title" style="margin-bottom: 0;">MatriDerm® Dermal Matrix</h3>
-              <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="height: 24px; width: auto; object-fit: contain;">
-            </div>
-            <div class="flagship-subtitle">Three-Dimensional Acellular Collagen-Elastin Template</div>
-            <p class="flagship-desc">
-              The gold-standard acellular dermal scaffold engineered using the patented <strong>Advanced CryoSafe® Method</strong> (zero chemical cross-linking). Preserves native structural closeness to human dermis, accelerates revascularization, and significantly limits α-SMA myofibroblast contraction. Validated for true <strong>One-Step and Multi-Step</strong> procedures in burns, trauma, cancer reconstructive surgery, and chronic non-healing ulcers.
-            </p>
-            <div class="feature-pill-list">
-              <span class="feature-pill"><i class="fas fa-check"></i> One-Step & Multi-Step Grafting</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> Patented CryoSafe® Method</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> Native Collagen + Alpha-Elastin</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> Zero Chemical Cross-Linking</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> 1mm & 2mm / Classic, Fenestrated, Flex</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> Limits Scar Contraction</span>
-            </div>
-            <div class="flagship-footer-actions">
-              <button class="btn btn-teal" onclick="openSpecModal('matriderm')">
-                <i class="fas fa-microscope"></i> Clinical Specs
-              </button>
-              <a href="https://matriderm.com/" target="_blank" rel="noopener" class="btn btn-outline" style="border-color: var(--navy); color: var(--navy);">
-                <i class="fas fa-external-link-alt"></i> MatriDerm® Global
-              </a>
-              <button class="btn btn-navy" onclick="requestProductQuote('MatriDerm® Dermal Matrix')">
-                <i class="fas fa-file-invoice"></i> Quote
-              </button>
-            </div>
+          <h3 class="card-title">Single-Use Dermal Matrix</h3>
+          <p class="card-text">
+            Three-dimensional porous collagen-elastin matrices for single-stage reconstruction, burn surgeries, trauma defect coverage, and severe scar release.
+          </p>
+          <div style="display: flex; gap: 0.75rem; align-items: center; margin-top: auto; padding-top: 1rem;">
+            <a href="#card-matriderm" class="card-link" onclick="openSpecModal('matriderm')">
+              Clinical Specs <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="https://matriderm.com/" target="_blank" rel="noopener" class="card-link" style="color: var(--teal);">
+              Global Site <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
-        <!-- NATROX O2 Flagship Card -->
-        <div class="flagship-card" id="natrox-card" style="border-color: rgba(30, 184, 201, 0.4); box-shadow: 0 10px 25px -5px rgba(30, 184, 201, 0.15);">
-          <div class="flagship-card-media">
-            <div class="flagship-media-header">
-              <span class="flagship-badge" style="background: var(--teal); box-shadow: 0 4px 12px rgba(30, 184, 201, 0.4);">
-                <i class="fas fa-certificate"></i> Official India Distributor
-              </span>
-              <span class="flagship-origin">
-                <i class="fas fa-globe"></i> Inotec AMD Ltd, UK & USA
-              </span>
-            </div>
-            <div class="flagship-img-container">
-              <img src="assets/natrox-in-hand.png" alt="NATROX O2 Continuous Topical Oxygen Therapy Device" class="flagship-img">
-            </div>
+        <!-- Item 2: NATROX O2 Continuous Topical Oxygen Therapy -->
+        <div class="portfolio-card" data-category="wound">
+          <div class="card-icon-box" style="background: rgba(30,184,201,0.15); color: var(--teal);">
+            <i class="fas fa-lungs"></i>
           </div>
-          <div class="flagship-body">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
-              <h3 class="flagship-title" style="margin-bottom: 0;">NATROX® O₂ Device</h3>
-              <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Logo" style="height: 24px; width: auto; object-fit: contain;">
-            </div>
-            <div class="flagship-subtitle">Continuous Topical Oxygen Therapy (cTOT)</div>
-            <p class="flagship-desc">
-              The world's leading wearable device delivering continuous 98% pure, humidified oxygen (13 ml/hr) directly to chronic, non-healing wounds 24/7. Proven in RCT clinical trials with a <strong>71% healing rate</strong> in chronic diabetic foot ulcers, active angiogenesis stimulation, and dramatic pain reduction.
-            </p>
-            <div class="feature-pill-list">
-              <span class="feature-pill"><i class="fas fa-check"></i> 13 ml/hr Humidified 98% O₂</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> 24/7 Continuous Healing</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> Ultra-Portable ~140g</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> 71% Healing Rate (RCT)</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> UK NICE Guidance MIB208</span>
-              <span class="feature-pill"><i class="fas fa-check"></i> Dual 24-hr Batteries</span>
-            </div>
-            <div class="flagship-footer-actions">
-              <button class="btn btn-teal" onclick="openSpecModal('natrox')">
-                <i class="fas fa-stethoscope"></i> Clinical Specs
-              </button>
-              <a href="https://www.natroxwoundcare.com/" target="_blank" rel="noopener" class="btn btn-outline" style="border-color: var(--navy); color: var(--navy);">
-                <i class="fas fa-external-link-alt"></i> NATROX® Global
-              </a>
-              <button class="btn btn-navy" onclick="requestProductQuote('NATROX® O2 Device')">
-                <i class="fas fa-file-invoice"></i> Quote
-              </button>
-            </div>
+          <h3 class="card-title">NATROX® O₂ Oxygen Therapy</h3>
+          <p class="card-text">
+            Continuous topical oxygen therapy (cTOT) device delivering 98% pure humidified oxygen (13 ml/hr) directly to the wound bed 24/7. Proven in RCT trials with a 71% healing rate in non-healing chronic DFUs and VLUs.
+          </p>
+          <div style="display: flex; gap: 0.75rem; align-items: center; margin-top: auto; padding-top: 1rem;">
+            <a href="#natrox-card" class="card-link" onclick="openSpecModal('natrox')">
+              Clinical Specs <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="https://www.natroxwoundcare.com/" target="_blank" rel="noopener" class="card-link" style="color: var(--teal);">
+              Global Site <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-card" data-category="hospital">
+          <div class="card-icon-box">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <h3 class="card-title">Hospital Institutional Supply</h3>
+          <p class="card-text">
+            Turnkey supply chain fulfillment for leading hospital chains, government medical institutions, and defense hospitals with assured sterile integrity and batch tracking.
+          </p>
+          <a href="#contact" class="card-link">
+            Institutional Procurement <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-card" data-category="support">
+          <div class="card-icon-box">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="card-title">HCP Training & Education</h3>
+          <p class="card-text">
+            Accredited workshops, cadaver lab sponsorships, and surgical masterclasses training residents and senior surgeons on state-of-the-art reconstructive techniques.
+          </p>
+          <a href="#contact" class="card-link">
+            Request Workshop <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-card" data-category="support">
+          <div class="card-icon-box">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="card-title">Dedicated Sales & Clinical Support</h3>
+          <p class="card-text">
+            On-ground clinical application specialists present inside operating rooms to assist surgical teams with matrix handling, rehydration, and grafting alignment.
+          </p>
+          <a href="#contact" class="card-link">
+            Clinical Assistance <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-card" data-category="hospital">
+          <div class="card-icon-box">
+            <i class="fas fa-truck-ramp-box"></i>
+          </div>
+          <h3 class="card-title">Cold-Chain Pan-India Logistics</h3>
+          <p class="card-text">
+            Temperature-validated warehousing and emergency courier networks ensuring medical supplies reach emergency operating rooms across India within 24 to 48 hours.
+          </p>
+          <a href="#network" class="card-link">
+            View Logistics Network <i class="fas fa-chevron-right"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -556,207 +618,148 @@
   </section>
 
   <!-- ========================================================================
-       SOLUTIONS & MEDICAL PORTFOLIO (ENTERPRISE PILLARS)
+       PRODUCT: FLAGSHIP REGENERATIVE PLATFORMS (MATRIDERM & NATROX O2)
        ======================================================================== -->
-  <section class="section-padding portfolio-section" id="portfolio">
+  <section class="section-padding flagship-section" id="product">
+    <a id="flagship"></a>
     <div class="container">
       <div class="section-header">
         <span class="section-tag">
-          <i class="fas fa-hospital-user"></i> Enterprise Spectrum
+          <i class="fas fa-layer-group"></i> Flagship Medical Portfolio
         </span>
-        <h2 class="section-title">Comprehensive Medical Solutions & Services</h2>
+        <h2 class="section-title">Gold Standard Solutions for Tissue & Wound Reconstruction</h2>
         <p class="section-desc">
-          Supplying hospitals, surgical suites, and medical professionals nationwide as trusted collaborative partners to multinational manufacturers.
+          Empowering plastic surgeons, burn specialists, and surgical teams with clinically validated dermal matrices and continuous topical oxygen therapy (cTOT) healing systems.
         </p>
       </div>
 
-      <!-- Filterable Pills -->
-      <div class="filter-pill-container">
-        <button class="filter-btn active" data-filter="all">All Solutions (6)</button>
-        <button class="filter-btn" data-filter="matrix">Dermal Matrices</button>
-        <button class="filter-btn" data-filter="wound">Wound Therapeutics</button>
-        <button class="filter-btn" data-filter="hospital">Hospital Solutions</button>
-        <button class="filter-btn" data-filter="support">Clinical Training & Support</button>
+      <!-- Official MatriDerm & NATROX O2 Distribution Credentials Showcase -->
+      <div class="credentials-showcase">
+        <div class="credentials-showcase-left">
+          <div class="credentials-logos-group">
+            <div class="credentials-logo-box">
+              <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="height: 32px; width: auto; max-width: 180px; object-fit: contain;">
+            </div>
+            <div class="credentials-logo-box">
+              <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="height: 36px; width: auto; max-width: 170px; object-fit: contain;">
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span class="pulse-dot"></span>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--teal); text-transform: uppercase; letter-spacing: 1px;">Official Pan-India Exclusive & National Distribution</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--navy); margin-top: 3px;">
+              Official National Distributor of MatriDerm® & NATROX® O₂ Device in India
+            </h3>
+            <p style="font-size: 0.8125rem; color: #64748b; margin-top: 2px;">
+              MedSkin Solutions Dr. Suwelack AG (Germany) & Inotec AMD Ltd (Cambridge, UK & USA) &bull; Distributed Nationwide by GR Healthaids Pvt. Ltd.
+            </p>
+          </div>
+        </div>
+        <div class="credentials-showcase-actions">
+          <span style="background: rgba(30, 184, 201, 0.1); color: var(--teal); border: 1px solid rgba(30, 184, 201, 0.3); padding: 0.45rem 0.95rem; border-radius: var(--radius-pill); font-size: 0.8125rem; font-weight: 700;">
+            <i class="fas fa-certificate"></i> CDSCO Regulated Importer
+          </span>
+          <button class="btn btn-teal" style="padding: 0.5rem 1rem; font-size: 0.8125rem;" onclick="openSpecModal('matriderm')">
+            <i class="fas fa-layer-group"></i> MatriDerm® Specs
+          </button>
+          <button class="btn btn-navy" style="padding: 0.5rem 1rem; font-size: 0.8125rem;" onclick="openSpecModal('natrox')">
+            <i class="fas fa-lungs"></i> NATROX® O₂ Specs
+          </button>
+        </div>
       </div>
 
-      <!-- Portfolio Cards Grid -->
-      <div class="portfolio-grid">
-        <!-- Item 1 -->
-        <div class="portfolio-card" data-category="matrix">
-          <div class="card-icon-box">
-            <i class="fas fa-dna"></i>
-          </div>
-          <h3 class="card-title">Single-Use Dermal Matrix</h3>
-          <p class="card-text">
-            Three-dimensional porous collagen-elastin matrices for single-stage reconstruction, burn surgeries, trauma defect coverage, and severe scar release.
-          </p>
-          <div style="display: flex; gap: 0.75rem; align-items: center; margin-top: auto; padding-top: 1rem;">
-            <a href="#card-matriderm" class="card-link" onclick="openSpecModal('matriderm')">
-              Clinical Specs <i class="fas fa-chevron-right"></i>
-            </a>
-            <a href="https://matriderm.com/" target="_blank" rel="noopener" class="card-link" style="color: var(--teal);">
-              Global Site <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Item 2: NATROX O2 Continuous Topical Oxygen Therapy -->
-        <div class="portfolio-card" data-category="wound">
-          <div class="card-icon-box" style="background: rgba(30,184,201,0.15); color: var(--teal);">
-            <i class="fas fa-lungs"></i>
-          </div>
-          <h3 class="card-title">NATROX® O₂ Oxygen Therapy</h3>
-          <p class="card-text">
-            Continuous topical oxygen therapy (cTOT) device delivering 98% pure humidified oxygen (13 ml/hr) directly to the wound bed 24/7. Proven in RCT trials with a 71% healing rate in non-healing chronic DFUs and VLUs.
-          </p>
-          <div style="display: flex; gap: 0.75rem; align-items: center; margin-top: auto; padding-top: 1rem;">
-            <a href="#natrox-card" class="card-link" onclick="openSpecModal('natrox')">
-              Clinical Specs <i class="fas fa-chevron-right"></i>
-            </a>
-            <a href="https://www.natroxwoundcare.com/" target="_blank" rel="noopener" class="card-link" style="color: var(--teal);">
-              Global Site <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="portfolio-card" data-category="hospital">
-          <div class="card-icon-box">
-            <i class="fas fa-hospital"></i>
-          </div>
-          <h3 class="card-title">Hospital Institutional Supply</h3>
-          <p class="card-text">
-            Turnkey supply chain fulfillment for leading hospital chains, government medical institutions, and defense hospitals with assured sterile integrity and batch tracking.
-          </p>
-          <a href="#contact" class="card-link">
-            Institutional Procurement <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="portfolio-card" data-category="support">
-          <div class="card-icon-box">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <h3 class="card-title">HCP Training & Education</h3>
-          <p class="card-text">
-            Accredited workshops, cadaver lab sponsorships, and surgical masterclasses training residents and senior surgeons on state-of-the-art reconstructive techniques.
-          </p>
-          <a href="#contact" class="card-link">
-            Request Workshop <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="portfolio-card" data-category="support">
-          <div class="card-icon-box">
-            <i class="fas fa-headset"></i>
-          </div>
-          <h3 class="card-title">Dedicated Sales & Clinical Support</h3>
-          <p class="card-text">
-            On-ground clinical application specialists present inside operating rooms to assist surgical teams with matrix handling, rehydration, and grafting alignment.
-          </p>
-          <a href="#contact" class="card-link">
-            Clinical Assistance <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="portfolio-card" data-category="hospital">
-          <div class="card-icon-box">
-            <i class="fas fa-truck-ramp-box"></i>
-          </div>
-          <h3 class="card-title">Cold-Chain Pan-India Logistics</h3>
-          <p class="card-text">
-            Temperature-validated warehousing and emergency courier networks ensuring medical supplies reach emergency operating rooms across India within 24 to 48 hours.
-          </p>
-          <a href="#network" class="card-link">
-            View Logistics Network <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       ENTERPRISE EXPANSION STAGES
-       ======================================================================== -->
-  <section class="section-padding timeline-section" id="timeline">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" style="background: rgba(255,255,255,0.1); color: var(--teal); border-color: rgba(30,184,201,0.4);">
-          <i class="fas fa-chart-line"></i> Enterprise Expansion Stages
-        </span>
-        <h2 class="section-title">Strategic Growth & National Expansion Journey</h2>
-        <p class="section-desc">
-          From our founding inception to our standing as a national-level enterprise, discover our commitment to improving patients' lives across every stage of growth.
-        </p>
-      </div>
-
-      <div class="timeline-wrapper">
-        <div class="timeline-track-line">
-          <div class="timeline-track-progress"></div>
-        </div>
-
-        <div class="timeline-milestones-grid">
-          <!-- Stage 01 -->
-          <div class="milestone-node">
-            <div class="milestone-dot">
-              <i class="fas fa-flag text-teal" style="font-size: 0.75rem;"></i>
+      <div class="flagship-grid">
+        <!-- MatriDerm Flagship Card -->
+        <div class="flagship-card" id="card-matriderm" style="border-color: rgba(26, 69, 120, 0.25); box-shadow: 0 10px 25px -5px rgba(26, 69, 120, 0.1);">
+          <div class="flagship-card-media">
+            <div class="flagship-media-header">
+              <span class="flagship-badge">
+                <i class="fas fa-crown"></i> Exclusive Official Distributor
+              </span>
+              <span class="flagship-origin">
+                <i class="fas fa-globe-europe"></i> MedSkin Solutions, Germany
+              </span>
             </div>
-            <div class="milestone-stage">Stage 01</div>
-            <h4 class="milestone-title">Founding Inception</h4>
-            <p class="milestone-desc">
-              GR Healthaids Pvt. Ltd. founded in New Delhi with a mission to bring world-class healthcare tools to Indian practitioners.
-            </p>
-          </div>
-
-          <!-- Stage 02 -->
-          <div class="milestone-node">
-            <div class="milestone-dot">
-              <i class="fas fa-hospital text-teal" style="font-size: 0.75rem;"></i>
+            <div class="flagship-img-container">
+              <img src="assets/hex-portfolio-matriderm-classic_2021-05-20-142453.webp" alt="MatriDerm Dermal Matrix System" class="flagship-img">
             </div>
-            <div class="milestone-stage">Stage 02</div>
-            <h4 class="milestone-title">Hospital Network Expansion</h4>
-            <p class="milestone-desc">
-              Established pan-India distribution supplying government apex institutions, premier trusts, and armed forces medical facilities.
-            </p>
           </div>
-
-          <!-- Stage 03 -->
-          <div class="milestone-node">
-            <div class="milestone-dot">
-              <i class="fas fa-handshake text-teal" style="font-size: 0.75rem;"></i>
+          <div class="flagship-body">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h3 class="flagship-title" style="margin-bottom: 0;">MatriDerm® Dermal Matrix</h3>
+              <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="height: 24px; width: auto; object-fit: contain;">
             </div>
-            <div class="milestone-stage">Stage 03</div>
-            <h4 class="milestone-title">MatriDerm® Partnership</h4>
-            <p class="milestone-desc">
-              Became the authorized partner and distributor of MatriDerm® (Germany), transforming burn and reconstructive care across India.
+            <div class="flagship-subtitle">Three-Dimensional Acellular Collagen-Elastin Template</div>
+            <p class="flagship-desc">
+              The gold-standard acellular dermal scaffold engineered using the patented <strong>Advanced CryoSafe® Method</strong> (zero chemical cross-linking). Preserves native structural closeness to human dermis, accelerates revascularization, and significantly limits α-SMA myofibroblast contraction. Validated for true <strong>One-Step and Multi-Step</strong> procedures in burns, trauma, cancer reconstructive surgery, and chronic non-healing ulcers.
             </p>
+            <div class="feature-pill-list">
+              <span class="feature-pill"><i class="fas fa-check"></i> One-Step & Multi-Step Grafting</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> Patented CryoSafe® Method</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> Native Collagen + Alpha-Elastin</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> Zero Chemical Cross-Linking</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> 1mm & 2mm / Classic, Fenestrated, Flex</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> Limits Scar Contraction</span>
+            </div>
+            <div class="flagship-footer-actions">
+              <button class="btn btn-teal" onclick="openSpecModal('matriderm')">
+                <i class="fas fa-microscope"></i> Clinical Specs
+              </button>
+              <a href="https://matriderm.com/" target="_blank" rel="noopener" class="btn btn-outline" style="border-color: var(--navy); color: var(--navy);">
+                <i class="fas fa-external-link-alt"></i> MatriDerm® Global
+              </a>
+              <button class="btn btn-navy" onclick="requestProductQuote('MatriDerm® Dermal Matrix')">
+                <i class="fas fa-file-invoice"></i> Quote
+              </button>
+            </div>
           </div>
+        </div>
 
-          <!-- Stage 04 -->
-          <div class="milestone-node">
-            <div class="milestone-dot">
-              <i class="fas fa-lungs text-teal" style="font-size: 0.75rem;"></i>
+        <!-- NATROX O2 Flagship Card -->
+        <div class="flagship-card" id="natrox-card" style="border-color: rgba(30, 184, 201, 0.4); box-shadow: 0 10px 25px -5px rgba(30, 184, 201, 0.15);">
+          <div class="flagship-card-media">
+            <div class="flagship-media-header">
+              <span class="flagship-badge" style="background: var(--teal); box-shadow: 0 4px 12px rgba(30, 184, 201, 0.4);">
+                <i class="fas fa-certificate"></i> Official India Distributor
+              </span>
+              <span class="flagship-origin">
+                <i class="fas fa-globe"></i> Inotec AMD Ltd, UK & USA
+              </span>
             </div>
-            <div class="milestone-stage">Stage 04</div>
-            <h4 class="milestone-title">NATROX® O₂ Partnership</h4>
-            <p class="milestone-desc">
-              Appointed official national distributor in India for NATROX® O₂ (Inotec AMD Ltd, Cambridge, UK), introducing continuous topical oxygen therapy (cTOT) for refractory chronic wounds.
-            </p>
+            <div class="flagship-img-container">
+              <img src="assets/natrox-in-hand.png" alt="NATROX O2 Continuous Topical Oxygen Therapy Device" class="flagship-img">
+            </div>
           </div>
-
-          <!-- Stage 05 -->
-          <div class="milestone-node">
-            <div class="milestone-dot" style="background: var(--teal); border-color: #ffffff;">
-              <i class="fas fa-star text-white" style="font-size: 0.75rem;"></i>
+          <div class="flagship-body">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h3 class="flagship-title" style="margin-bottom: 0;">NATROX® O₂ Device</h3>
+              <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Logo" style="height: 24px; width: auto; object-fit: contain;">
             </div>
-            <div class="milestone-stage">Stage 05</div>
-            <h4 class="milestone-title">Digital Era Enterprise</h4>
-            <p class="milestone-desc">
-              Over 50+ multinational partner brands, championing CDSCO 5% GST reform, with seamless digital hospital fulfillment.
+            <div class="flagship-subtitle">Continuous Topical Oxygen Therapy (cTOT)</div>
+            <p class="flagship-desc">
+              The world's leading wearable device delivering continuous 98% pure, humidified oxygen (13 ml/hr) directly to chronic, non-healing wounds 24/7. Proven in RCT clinical trials with a <strong>71% healing rate</strong> in chronic diabetic foot ulcers, active angiogenesis stimulation, and dramatic pain reduction.
             </p>
+            <div class="feature-pill-list">
+              <span class="feature-pill"><i class="fas fa-check"></i> 13 ml/hr Humidified 98% O₂</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> 24/7 Continuous Healing</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> Ultra-Portable ~140g</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> 71% Healing Rate (RCT)</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> UK NICE Guidance MIB208</span>
+              <span class="feature-pill"><i class="fas fa-check"></i> Dual 24-hr Batteries</span>
+            </div>
+            <div class="flagship-footer-actions">
+              <button class="btn btn-teal" onclick="openSpecModal('natrox')">
+                <i class="fas fa-stethoscope"></i> Clinical Specs
+              </button>
+              <a href="https://www.natroxwoundcare.com/" target="_blank" rel="noopener" class="btn btn-outline" style="border-color: var(--navy); color: var(--navy);">
+                <i class="fas fa-external-link-alt"></i> NATROX® Global
+              </a>
+              <button class="btn btn-navy" onclick="requestProductQuote('NATROX® O2 Device')">
+                <i class="fas fa-file-invoice"></i> Quote
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1137,7 +1140,7 @@
         <div class="footer-heading">Enterprise</div>
         <ul class="footer-links">
           <li><a href="#hero">Home Portal</a></li>
-          <li><a href="#timeline">Expansion Stages</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#matcher">Clinical Triage Matcher</a></li>
           <li><a href="#network">Pan-India Logistics</a></li>
           <li><a href="#policy">CDSCO 5% GST Notification</a></li>
