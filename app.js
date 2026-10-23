@@ -766,4 +766,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 700);
   };
 
+  // =========================================================================
+  // 12. OUR CUSTOMERS CATEGORY FILTER
+  // =========================================================================
+  const customerFilterBtns = document.querySelectorAll('.customer-filter-btn');
+  const customerCards = document.querySelectorAll('.customer-logo-card');
+
+  if (customerFilterBtns.length && customerCards.length) {
+    customerFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        customerFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        customerCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+            card.classList.remove('fade-in');
+            void card.offsetWidth; // trigger reflow for animation restart
+            card.classList.add('fade-in');
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
 });
