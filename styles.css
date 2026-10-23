@@ -293,6 +293,18 @@ img {
   width: 100%;
 }
 
+.nav-spec-link {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-spec-link i {
+  color: var(--teal);
+  font-size: 0.85rem;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -1549,80 +1561,242 @@ img {
   margin-top: 0.2rem;
 }
 
-/* Radar Display */
-.radar-display-box {
-  background: var(--navy);
+/* ==========================================================================
+   CORPORATE LOCATION BIG MAP & APPROXIMATE LOCATION POINTER
+   ========================================================================== */
+.company-map-container {
+  background: #ffffff;
   border-radius: var(--radius-xl);
-  padding: 2.5rem;
-  position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(30, 184, 201, 0.3);
-  min-height: 440px;
+  box-shadow: 0 20px 45px -15px rgba(26, 69, 120, 0.18);
+  border: 1px solid var(--border-light);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-}
-
-.radar-circle-outer {
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border: 1px dashed rgba(30, 184, 201, 0.3);
-  border-radius: 50%;
-  animation: radarSpin 24s linear infinite;
-}
-
-.radar-circle-inner {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border: 1px solid rgba(30, 184, 201, 0.45);
-  border-radius: 50%;
-}
-
-.radar-sweep {
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, rgba(30, 184, 201, 0.3) 0deg, transparent 60deg);
-  animation: radarSpin 4s linear infinite;
-}
-
-@keyframes radarSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.radar-hub-pin {
-  position: absolute;
-  background: var(--teal);
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 15px var(--teal);
-  cursor: pointer;
-  transition: transform var(--transition-fast);
-}
-
-.radar-hub-pin:hover {
-  transform: scale(1.5);
-}
-
-.radar-hud-overlay {
   position: relative;
+  min-height: 480px;
+}
+
+.map-top-bar {
+  background: var(--navy);
+  color: #ffffff;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 5;
+}
+
+.map-top-left {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.map-top-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--teal);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+}
+
+.map-top-address {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.map-approx-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--teal-light);
+  background: rgba(30, 184, 201, 0.15);
+  border: 1px solid rgba(30, 184, 201, 0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+.map-frame-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  min-height: 360px;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.company-map-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Static Location Pointer & Floating Information Card (No radar animations) */
+.map-pointer-pin-wrapper {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
   z-index: 10;
-  text-align: center;
-  background: rgba(26, 69, 120, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: var(--radius-lg);
-  max-width: 340px;
+}
+
+.map-pointer-pin {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 3px solid #ffffff;
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  box-shadow: 0 8px 24px rgba(26, 69, 120, 0.45);
+  margin-bottom: 0.65rem;
+  pointer-events: auto;
+}
+
+.map-pointer-card {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(26, 69, 120, 0.15);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  box-shadow: 0 12px 30px rgba(26, 69, 120, 0.2);
+  max-width: 330px;
+  text-align: left;
+}
+
+.pointer-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.pointer-company-name {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.pointer-corp-badge {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  color: var(--teal);
+  background: var(--teal-subtle);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+}
+
+.pointer-card-address {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.pointer-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.75rem;
+}
+
+.pointer-note {
+  color: #64748b;
+  font-size: 0.7rem;
+}
+
+.pointer-external-link {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pointer-external-link:hover {
+  color: var(--teal);
+}
+
+/* Map Hubs Footer Toolbar */
+.map-hubs-footer {
+  background: var(--bg-page);
+  padding: 0.75rem 1.15rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+
+.map-hubs-caption {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.map-hubs-nav {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.map-hub-btn {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--navy);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all var(--transition-fast);
+}
+
+.map-hub-btn:hover, .map-hub-btn.active {
+  background: var(--navy);
+  color: #ffffff;
+  border-color: var(--navy);
+}
+
+.map-hub-btn.active i {
+  color: var(--teal);
 }
 
 /* ==========================================================================
@@ -1852,6 +2026,20 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.footer-brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-desc {

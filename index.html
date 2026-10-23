@@ -48,30 +48,23 @@
        ======================================================================== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="brand-logo" id="brand-logo-btn">
-        <img src="assets/grh-corporate-logo.png" alt="GRH Official Corporate Logo" class="brand-logo-img">
-        <div class="brand-text-block">
-          <span class="brand-name">GR Healthaids Pvt. Ltd.</span>
-        </div>
+      <a href="#hero" class="brand-logo" id="brand-logo-btn" title="GRH - Corporate Home">
+        <img src="assets/grh-corporate-logo.png" alt="GRH Corporate Brand Logo" class="brand-logo-img">
       </a>
 
-      <!-- Desktop Navigation Menu -->
+      <!-- Desktop Navigation Menu (Exact Mapping: Home, About Us, Solution, Product, Network, Contact us, Clinical Specs) -->
       <ul class="nav-menu">
         <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#flagship" class="nav-link">MatriDerm®</a></li>
-        <li><a href="#natrox-card" class="nav-link">NATROX® O₂</a></li>
-        <li><a href="#matcher" class="nav-link">Clinical Matcher</a></li>
-        <li><a href="#portfolio" class="nav-link">Solutions</a></li>
-        <li><a href="#timeline" class="nav-link">Expansion</a></li>
+        <li><a href="#timeline" class="nav-link">About Us</a></li>
+        <li><a href="#portfolio" class="nav-link">Solution</a></li>
+        <li><a href="#flagship" class="nav-link">Product</a></li>
         <li><a href="#network" class="nav-link">Network</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-link">Contact us</a></li>
+        <li><a href="javascript:void(0)" class="nav-link nav-spec-link" id="quick-spec-btn" onclick="openSpecModal('matriderm')"><i class="fas fa-file-medical"></i> Clinical Specs</a></li>
       </ul>
 
       <!-- Action Group -->
       <div class="nav-actions">
-        <button class="btn btn-outline" id="quick-spec-btn">
-          <i class="fas fa-file-medical"></i> Clinical Specs
-        </button>
         <a href="#contact" class="btn btn-teal" id="nav-quote-cta">
           <i class="fas fa-handshake"></i> Partner With Us
         </a>
@@ -88,17 +81,15 @@
   <div class="mobile-drawer" id="mobile-drawer">
     <button class="mobile-close" id="mobile-close-btn">&times;</button>
     <a href="#hero" class="mobile-nav-item">Home</a>
-    <a href="#flagship" class="mobile-nav-item">MatriDerm® Dermal Matrix</a>
-    <a href="#natrox-card" class="mobile-nav-item">NATROX® O₂ Oxygen Therapy</a>
-    <a href="#matcher" class="mobile-nav-item">Clinical Matcher</a>
-    <a href="#portfolio" class="mobile-nav-item">Solutions & Portfolio</a>
-    <a href="#timeline" class="mobile-nav-item">Expansion Stages</a>
-    <a href="#network" class="mobile-nav-item">Pan-India Logistics</a>
-    <a href="#policy" class="mobile-nav-item">GST Rationalization</a>
-    <a href="#contact" class="mobile-nav-item">Institutional Inquiries</a>
-    <button class="btn btn-teal" id="mobile-drawer-cta" style="margin-top: 1rem;">
-      <i class="fas fa-paper-plane"></i> Request Catalog & Samples
-    </button>
+    <a href="#timeline" class="mobile-nav-item">About Us</a>
+    <a href="#portfolio" class="mobile-nav-item">Solution</a>
+    <a href="#flagship" class="mobile-nav-item">Product</a>
+    <a href="#network" class="mobile-nav-item">Network</a>
+    <a href="#contact" class="mobile-nav-item">Contact us</a>
+    <a href="javascript:void(0)" class="mobile-nav-item" id="mobile-spec-btn" onclick="openSpecModal('matriderm'); document.getElementById('mobile-drawer').classList.remove('active'); document.body.style.overflow='';"><i class="fas fa-file-medical text-teal"></i> Clinical Specs</a>
+    <a href="#contact" class="btn btn-teal" id="mobile-drawer-cta" style="margin-top: 1.25rem;">
+      <i class="fas fa-handshake"></i> Partner With Us
+    </a>
   </div>
 
   <!-- ========================================================================
@@ -171,10 +162,10 @@
             <div class="card-shine"></div>
             
             <div class="card-header-badge">
-              <div class="partner-logo-pill" style="display: flex; gap: 0.5rem; align-items: center;">
-                <img src="assets/grh_official_distributor_matriderm_clean_light.png" alt="GRH Official Distributor of MatriDerm in India" style="max-height: 28px;">
+              <div class="partner-logo-pill" style="display: flex; gap: 0.65rem; align-items: center;">
+                <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="max-height: 20px; width: auto; object-fit: contain;">
                 <span style="color: #94a3b8; font-size: 0.8rem;">|</span>
-                <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="max-height: 22px;">
+                <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="max-height: 20px; width: auto; object-fit: contain;">
               </div>
               <span class="card-status-chip">
                 <i class="fas fa-check-circle"></i> Official India Distributor
@@ -297,10 +288,10 @@
         <div class="credentials-showcase-left">
           <div class="credentials-logos-group">
             <div class="credentials-logo-box">
-              <img src="assets/grh_official_distributor_matriderm_clean_light.png" alt="GRH Official Exclusive National Distributor of MatriDerm in India" style="height: 48px; width: auto; max-width: 210px; object-fit: contain;">
+              <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="height: 32px; width: auto; max-width: 180px; object-fit: contain;">
             </div>
             <div class="credentials-logo-box">
-              <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="height: 40px; width: auto; max-width: 170px; object-fit: contain;">
+              <img src="assets/natrox-wound-care-logo.png" alt="NATROX Wound Care Official Logo" style="height: 36px; width: auto; max-width: 170px; object-fit: contain;">
             </div>
           </div>
           <div>
@@ -791,18 +782,18 @@
         <!-- Interactive Hubs List -->
         <div class="network-details">
           <div class="hub-list">
-            <div class="hub-item active" onclick="activateHub('gurugram')">
+            <div class="hub-item active" onclick="activateHub('gurugram')" id="hub-item-gurugram">
               <div class="hub-icon-box">
                 <i class="fas fa-building"></i>
               </div>
               <div>
                 <h4 class="hub-name">Gurugram Corporate Headquarters</h4>
-                <p class="hub-info">406 Global Foyer, Golf Course Road, Sector 43, Gurugram 122002</p>
+                <p class="hub-info">Golf Course Road, Sector 43, Gurugram, Delhi NCR, India</p>
                 <span style="font-size: 0.75rem; color: var(--teal); font-weight: 700;">Executive Offices & Clinical Management</span>
               </div>
             </div>
 
-            <div class="hub-item" onclick="activateHub('delhi')">
+            <div class="hub-item" onclick="activateHub('delhi')" id="hub-item-delhi">
               <div class="hub-icon-box">
                 <i class="fas fa-landmark"></i>
               </div>
@@ -813,7 +804,7 @@
               </div>
             </div>
 
-            <div class="hub-item" onclick="activateHub('mumbai')">
+            <div class="hub-item" onclick="activateHub('mumbai')" id="hub-item-mumbai">
               <div class="hub-icon-box">
                 <i class="fas fa-city"></i>
               </div>
@@ -824,7 +815,7 @@
               </div>
             </div>
 
-            <div class="hub-item" onclick="activateHub('bengaluru')">
+            <div class="hub-item" onclick="activateHub('bengaluru')" id="hub-item-bengaluru">
               <div class="hub-icon-box">
                 <i class="fas fa-microchip"></i>
               </div>
@@ -837,29 +828,74 @@
           </div>
         </div>
 
-        <!-- Animated Radar Screen -->
-        <div class="radar-display-box">
-          <div class="radar-circle-outer"></div>
-          <div class="radar-circle-inner"></div>
-          <div class="radar-sweep"></div>
+        <!-- Corporate Location Big Map with Static Location Pointer (No Radar Animations) -->
+        <div class="company-map-container" id="company-map-box">
+          <!-- Map Top Header Bar -->
+          <div class="map-top-bar">
+            <div class="map-top-left">
+              <span class="map-top-pill">
+                <i class="fas fa-map-marker-alt"></i> Company Location
+              </span>
+              <span class="map-top-address" id="map-header-address">
+                Sector 43, Golf Course Road, Gurugram, Delhi NCR
+              </span>
+            </div>
+            <div class="map-approx-badge">
+              <i class="fas fa-shield-alt"></i> Approximate Area
+            </div>
+          </div>
 
-          <!-- Radar Hub Pins -->
-          <div class="radar-hub-pin" style="top: 30%; left: 48%;" title="Delhi / Gurugram HQ" onclick="activateHub('gurugram')"></div>
-          <div class="radar-hub-pin" style="top: 52%; left: 34%;" title="Mumbai Western Hub" onclick="activateHub('mumbai')"></div>
-          <div class="radar-hub-pin" style="top: 72%; left: 45%;" title="Bengaluru Southern Hub" onclick="activateHub('bengaluru')"></div>
-          <div class="radar-hub-pin" style="top: 45%; left: 70%;" title="Kolkata Eastern Hub" onclick="activateHub('delhi')"></div>
+          <!-- Big Map Frame Wrapper -->
+          <div class="map-frame-wrapper">
+            <iframe 
+              id="company-map-frame" 
+              class="company-map-frame" 
+              src="https://www.openstreetmap.org/export/embed.html?bbox=77.0600%2C28.4420%2C77.1260%2C28.4840&amp;layer=mapnik&amp;marker=28.4635%2C77.0935" 
+              title="GR Healthaids Corporate Location - Sector 43 Gurugram" 
+              loading="lazy">
+            </iframe>
 
-          <!-- Overlay HUD Display -->
-          <div class="radar-hud-overlay">
-            <span style="font-size: 0.75rem; color: var(--teal); text-transform: uppercase; font-weight: 800; letter-spacing: 1px;">
-              Active Telemetry Node
-            </span>
-            <h4 id="hud-hub-title" style="color: #ffffff; font-size: 1.2rem; margin: 0.35rem 0;">Gurugram HQ & Delhi NCR</h4>
-            <p id="hud-hub-desc" style="font-size: 0.8125rem; color: rgba(255,255,255,0.75); line-height: 1.5;">
-              Central corporate headquarters and primary cold-storage fulfillment center supplying all Northern premier hospitals.
-            </p>
-            <div style="margin-top: 0.85rem; font-size: 0.75rem; color: var(--teal); font-weight: 700;">
-              <i class="fas fa-signal"></i> Network Status: 100% Operational
+            <!-- Static Location Pointer & Floating Information Card -->
+            <div class="map-pointer-pin-wrapper" id="map-pointer-pin-wrapper">
+              <div class="map-pointer-pin">
+                <i class="fas fa-map-pin"></i>
+              </div>
+              <div class="map-pointer-card" id="map-pointer-card">
+                <div class="pointer-card-header">
+                  <span class="pointer-company-name">GR Healthaids Pvt. Ltd.</span>
+                  <span class="pointer-corp-badge">Corporate Location</span>
+                </div>
+                <div class="pointer-card-address" id="pointer-card-address">
+                  <i class="fas fa-compass text-teal"></i> Golf Course Road, Sector 43, Gurugram, Delhi NCR
+                </div>
+                <div class="pointer-card-footer">
+                  <span class="pointer-note"><i class="fas fa-info-circle"></i> Approximate Location Indicator</span>
+                  <a href="https://www.openstreetmap.org/?mlat=28.4635&amp;mlon=77.0935#map=14/28.4635/77.0935" target="_blank" rel="noopener" class="pointer-external-link" id="pointer-map-link">
+                    Open Map <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Switcher Bar for Logistics Hubs -->
+          <div class="map-hubs-footer">
+            <div class="map-hubs-caption">
+              <i class="fas fa-network-wired text-teal"></i> Logistics Hubs:
+            </div>
+            <div class="map-hubs-nav">
+              <button class="map-hub-btn active" onclick="activateHub('gurugram')" id="hub-btn-gurugram">
+                <i class="fas fa-building"></i> Gurugram HQ (Sector 43)
+              </button>
+              <button class="map-hub-btn" onclick="activateHub('delhi')" id="hub-btn-delhi">
+                <i class="fas fa-warehouse"></i> Delhi Operations
+              </button>
+              <button class="map-hub-btn" onclick="activateHub('mumbai')" id="hub-btn-mumbai">
+                <i class="fas fa-plane-departure"></i> Mumbai Western
+              </button>
+              <button class="map-hub-btn" onclick="activateHub('bengaluru')" id="hub-btn-bengaluru">
+                <i class="fas fa-hospital"></i> Bengaluru Southern
+              </button>
             </div>
           </div>
         </div>
@@ -939,7 +975,7 @@
               <div class="contact-label">Corporate Headquarters</div>
               <div class="contact-value">GR Healthaids Pvt. Ltd.</div>
               <p style="font-size: 0.8125rem; color: #64748b; margin-top: 2px;">
-                406 Global Foyer, Golf Course Road, Sector 43, Gurugram, Haryana 122002
+                Golf Course Road, Sector 43, Gurugram, Delhi NCR, India
               </p>
             </div>
           </div>
@@ -1071,10 +1107,8 @@
     <div class="container footer-grid">
       <!-- Col 1: Brand Info -->
       <div class="footer-brand-info">
-        <a href="#hero" class="brand-logo" style="text-decoration: none;">
-          <div style="background: rgba(255, 255, 255, 0.95); padding: 5px 12px; border-radius: 10px; display: inline-flex; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-            <img src="assets/grh-corporate-logo.png" alt="GRH Official Corporate Logo" class="brand-logo-img" style="height: 38px;">
-          </div>
+        <a href="#hero" class="brand-logo footer-brand-logo" style="text-decoration: none;">
+          <img src="assets/grh_logo_white.png" alt="GRH Official Corporate Logo" class="footer-logo-img">
           <div class="brand-text-block">
             <span class="brand-title" style="color: #ffffff;">GRH</span>
             <span class="brand-subtitle" style="color: var(--teal);">GR Healthaids Pvt. Ltd.</span>
@@ -1120,8 +1154,8 @@
         <div class="footer-heading">Corporate Address</div>
         <p class="footer-desc" style="margin-bottom: 0.75rem;">
           <strong>GR Healthaids Pvt. Ltd.</strong><br>
-          406 Global Foyer, Golf Course Road,<br>
-          Sector 43, Gurugram 122002, India.<br>
+          Golf Course Road, Sector 43,<br>
+          Gurugram, Delhi NCR, India.<br>
           Phone: +91-9615961587 / 0124-4258167
         </p>
         <p class="footer-desc">

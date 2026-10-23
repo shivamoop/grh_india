@@ -388,44 +388,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // =========================================================================
-  // 6. PAN-INDIA LOGISTICS RADAR & TELEMETRY
+  // 6. PAN-INDIA LOGISTICS & BIG COMPANY LOCATION MAP
   // =========================================================================
-  const hubItems = document.querySelectorAll('.hub-item');
-  const hudTitle = document.getElementById('hud-hub-title');
-  const hudDesc = document.getElementById('hud-hub-desc');
-
   const hubData = {
     gurugram: {
-      title: 'Gurugram Corporate Headquarters & NCR Logistics Hub',
-      desc: '406 Global Foyer, Golf Course Road, Sector 43. Central command center managing clinical partnerships, regulatory affairs, and Northern India hospital supply.'
+      name: 'GR Healthaids Pvt. Ltd.',
+      badge: 'Corporate Location',
+      address: 'Golf Course Road, Sector 43, Gurugram, Delhi NCR',
+      note: 'Approximate Location Indicator (Executive Headquarters)',
+      osmBbox: '77.0600%2C28.4420%2C77.1260%2C28.4840',
+      marker: '28.4635%2C77.0935',
+      mapUrl: 'https://www.openstreetmap.org/?mlat=28.4635&mlon=77.0935#map=14/28.4635/77.0935'
     },
     delhi: {
-      title: 'New Delhi National Distribution & Cold Chain Terminal',
-      desc: 'Dedicated sterile cold-storage terminal providing same-day urgent dispatch to AIIMS, Safdarjung, Army R&R, Apollo, and North Indian medical centers.'
+      name: 'New Delhi Operations Hub',
+      badge: 'Cold-Chain Terminal',
+      address: 'Central Logistics & Distribution Terminal, Delhi NCR',
+      note: 'Same-Day Operating Room Express Fulfillment Center',
+      osmBbox: '77.1500%2C28.5600%2C77.2600%2C28.6600',
+      marker: '28.6139%2C77.2090',
+      mapUrl: 'https://www.openstreetmap.org/?mlat=28.6139&mlon=77.2090#map=13/28.6139/77.2090'
     },
     mumbai: {
-      title: 'Mumbai Western Regional Distribution Hub',
-      desc: 'Supplying Maharashtra, Gujarat, and Goa. Next-flight emergency matrix delivery available for trauma and emergency reconstructive burn operations.'
+      name: 'Mumbai Regional Logistics Center',
+      badge: 'Western Healthcare Corridor',
+      address: 'Servicing Maharashtra, Gujarat & Western Corridors',
+      note: 'Next-Flight Emergency Sterile Matrix Dispatch',
+      osmBbox: '72.8200%2C18.9800%2C72.9300%2C19.0800',
+      marker: '19.0330%2C72.8700',
+      mapUrl: 'https://www.openstreetmap.org/?mlat=19.0330&mlon=72.8700#map=13/19.0330/72.8700'
     },
     bengaluru: {
-      title: 'Bengaluru Southern Clinical & Logistics Center',
-      desc: 'Covers Karnataka, Tamil Nadu, Telangana, Andhra Pradesh & Kerala. Clinical field specialists stationed on-ground for surgeon support and workshops.'
+      name: 'Bengaluru Southern Corridor',
+      badge: 'Southern Operations Hub',
+      address: 'Servicing Karnataka, Tamil Nadu, Telangana & Kerala',
+      note: 'Dedicated Clinical Engineering & Field Support',
+      osmBbox: '77.5300%2C12.9200%2C77.6500%2C13.0200',
+      marker: '12.9716%2C77.5946',
+      mapUrl: 'https://www.openstreetmap.org/?mlat=12.9716&mlon=77.5946#map=13/12.9716/77.5946'
     }
   };
 
   window.activateHub = (hubKey) => {
-    const data = hubData[hubKey];
-    if (data && hudTitle && hudDesc) {
-      hudTitle.textContent = data.title;
-      hudDesc.textContent = data.desc;
-    }
+    const data = hubData[hubKey] || hubData.gurugram;
+    const mapFrame = document.getElementById('company-map-frame');
+    const headerAddr = document.getElementById('map-header-address');
+    const cardTitle = document.querySelector('.pointer-company-name');
+    const cardBadge = document.querySelector('.pointer-corp-badge');
+    const cardAddr = document.getElementById('pointer-card-address');
+    const mapLink = document.getElementById('pointer-map-link');
 
-    hubItems.forEach(item => {
-      if (item.getAttribute('onclick')?.includes(hubKey)) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
+    if (mapFrame) {
+      mapFrame.src = `https://www.openstreetmap.org/export/embed.html?bbox=${data.osmBbox}&layer=mapnik&marker=${data.marker}`;
+    }
+    if (headerAddr) headerAddr.textContent = data.address;
+    if (cardTitle) cardTitle.textContent = data.name;
+    if (cardBadge) cardBadge.textContent = data.badge;
+    if (cardAddr) cardAddr.innerHTML = `<i class="fas fa-compass text-teal"></i> ${data.address}`;
+    if (mapLink) mapLink.href = data.mapUrl;
+
+    document.querySelectorAll('.hub-item').forEach(item => {
+      const isTarget = item.id === `hub-item-${hubKey}` || item.getAttribute('onclick')?.includes(hubKey);
+      item.classList.toggle('active', !!isTarget);
+    });
+
+    document.querySelectorAll('.map-hub-btn').forEach(btn => {
+      const isTarget = btn.id === `hub-btn-${hubKey}` || btn.getAttribute('onclick')?.includes(hubKey);
+      btn.classList.toggle('active', !!isTarget);
     });
   };
 
@@ -444,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sub: 'MedSkin Solutions Dr. Suwelack AG (Germany) • National Distributor: GR Healthaids Pvt. Ltd.',
       html: `
         <div style="display: flex; gap: 1.5rem; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap;">
-          <img src="assets/grh_official_distributor_matriderm_clean_light.png" alt="GRH Official Distributor of MatriDerm in India" style="max-height: 48px; width: auto; object-fit: contain;">
+          <img src="assets/FV_Logo_matridermR.png" alt="MatriDerm Official Brand Logo" style="max-height: 38px; width: auto; object-fit: contain;">
           <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
             <span style="background: rgba(30,184,201,0.12); color: var(--teal); border: 1px solid rgba(30,184,201,0.3); padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;">
               <i class="fas fa-certificate"></i> Exclusive India Distributor
