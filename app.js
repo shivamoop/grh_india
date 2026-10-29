@@ -513,14 +513,11 @@ document.addEventListener('DOMContentLoaded', () => {
         </ul>
 
         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://www.grhindia.in/_files/ugd/ce3761_f377b43b07f4446da9f1e68eb15dfe5a.pdf" target="_blank" rel="noopener" class="btn btn-navy" style="font-size: 0.875rem;">
+            <i class="fas fa-file-pdf"></i> Download Official Brochure (PDF)
+          </a>
           <a href="https://matriderm.com/" target="_blank" rel="noopener" class="btn btn-teal" style="font-size: 0.875rem;">
             <i class="fas fa-external-link-alt"></i> Visit Official MatriDerm.com
-          </a>
-          <a href="https://www.grhindia.in/_files/ugd/ce3761_f377b43b07f4446da9f1e68eb15dfe5a.pdf" target="_blank" rel="noopener" class="btn btn-navy" style="font-size: 0.875rem;">
-            <i class="fas fa-file-pdf"></i> Download Brochure
-          </a>
-          <a href="https://www.grhindia.in/_files/ugd/ce3761_a36e5cb9407449dc8cbafab056f4dfc0.pdf" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.875rem; border-color: var(--navy); color: var(--navy);">
-            <i class="fas fa-book"></i> Bibliography (150+ Papers)
           </a>
         </div>
       `
