@@ -1379,120 +1379,218 @@ img {
 }
 
 /* ==========================================================================
-   ENTERPRISE TIMELINE
+   ABOUT US: ENTERPRISE VISION, ZOHO LEGALIZATION & DEMAND FORECASTING
    ========================================================================== */
-.timeline-section {
+.about-enterprise-section {
   background: var(--navy);
   color: #ffffff;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 80px;
 }
 
-.timeline-section .section-title {
+.about-enterprise-section::before {
+  content: '';
+  position: absolute;
+  top: -15%;
+  right: -8%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(30, 184, 201, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-enterprise-section::after {
+  content: '';
+  position: absolute;
+  bottom: -15%;
+  left: -8%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(15, 76, 129, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-enterprise-section .section-title {
   color: #ffffff;
 }
 
-.timeline-section .section-desc {
+.about-enterprise-section .section-desc {
   color: rgba(255, 255, 255, 0.85);
+  max-width: 820px;
 }
 
-.timeline-wrapper {
+.about-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 3rem;
   position: relative;
-  margin-top: 2rem;
+  z-index: 2;
 }
 
-.timeline-track-line {
-  position: absolute;
-  top: 40px;
-  left: 5%;
-  right: 5%;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.15);
-  z-index: 1;
+.about-pillar-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
-.timeline-track-progress {
+.about-pillar-card::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 75%;
-  background: var(--teal);
-  box-shadow: 0 0 15px var(--teal);
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.timeline-milestones-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.about-pillar-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(30, 184, 201, 0.45);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 20px rgba(30, 184, 201, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.about-pillar-card:hover::before {
+  opacity: 1;
+}
+
+.about-pillar-card.highlight-card {
+  border-color: rgba(30, 184, 201, 0.35);
+  background: linear-gradient(180deg, rgba(30, 184, 201, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+
+.pillar-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(30, 184, 201, 0.2), rgba(15, 76, 129, 0.35));
+  border: 1px solid rgba(30, 184, 201, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal);
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.about-pillar-card:hover .pillar-card-icon {
+  transform: scale(1.08) rotate(3deg);
+  background: linear-gradient(135deg, rgba(30, 184, 201, 0.3), rgba(15, 76, 129, 0.5));
+}
+
+.pillar-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--teal);
+  background: rgba(30, 184, 201, 0.12);
+  border: 1px solid rgba(30, 184, 201, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 0.85rem;
+}
+
+.pillar-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem;
+  line-height: 1.35;
+}
+
+.pillar-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.pillar-features-list {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.25rem;
+}
+
+.pillar-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.45;
+}
+
+.pillar-features-list li i {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Trust Strip */
+.about-trust-strip {
+  margin-top: 2.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
   position: relative;
   z-index: 2;
 }
 
-.milestone-node {
+.trust-strip-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 0.25rem;
+  flex: 1;
   text-align: center;
 }
 
-.milestone-dot {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--navy);
-  border: 3px solid var(--teal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 18px rgba(30, 184, 201, 0.5);
-  transition: var(--transition-fast);
-}
-
-.milestone-node:hover .milestone-dot {
-  transform: scale(1.2);
-  background: var(--teal);
-}
-
-.milestone-stage {
-  font-size: 0.8125rem;
+.trust-strip-num {
+  font-size: 1.65rem;
   font-weight: 800;
   color: var(--teal);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  background: rgba(30, 184, 201, 0.12);
-  border: 1px solid rgba(30, 184, 201, 0.35);
-  padding: 0.3rem 0.85rem;
-  border-radius: var(--radius-pill);
-  display: inline-block;
-  margin-bottom: 0.65rem;
-  transition: all var(--transition-fast);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
-.milestone-node:hover .milestone-stage {
-  background: var(--teal);
-  color: #ffffff;
-  border-color: var(--teal);
-  box-shadow: 0 4px 14px rgba(30, 184, 201, 0.45);
-  transform: translateY(-2px);
+.trust-strip-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+  font-weight: 500;
 }
 
-.milestone-year {
-  display: none;
-}
-
-.milestone-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0.4rem 0 0.5rem;
-}
-
-.milestone-desc {
-  font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.5;
+.trust-strip-divider {
+  width: 1px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* ==========================================================================
@@ -2504,12 +2602,18 @@ img {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .timeline-milestones-grid {
+  .about-pillars-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
-  .timeline-track-line {
-    display: none;
+  .about-trust-strip {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .trust-strip-divider {
+    width: 60%;
+    height: 1px;
   }
   .network-grid {
     grid-template-columns: 1fr;
