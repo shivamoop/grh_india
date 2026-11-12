@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 36" width="176" height="36" fill="none">
+  <defs>
+    <linearGradient id="instGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#102a4d"/>
+      <stop offset="100%" stop-color="#1a4578"/>
+    </linearGradient>
+  </defs>
+  <!-- Emblem Badge -->
+  <rect x="1" y="2" width="32" height="32" rx="7" fill="url(#instGrad)"/>
+  <rect x="1" y="2" width="32" height="32" rx="7" stroke="#1eb8c9" stroke-width="1.2" stroke-opacity="0.5"/>
+  <!-- Hospital Building & Cross -->
+  <path d="M9 26V15L17 10L25 15V26H9Z" fill="#ffffff" fill-opacity="0.15"/>
+  <path d="M11 25V16.5H23V25H11Z" stroke="#ffffff" stroke-width="1.2" fill="none"/>
+  <line x1="14" y1="19" x2="14" y2="24" stroke="#ffffff" stroke-width="1"/>
+  <line x1="17" y1="19" x2="17" y2="24" stroke="#ffffff" stroke-width="1"/>
+  <line x1="20" y1="19" x2="20" y2="24" stroke="#ffffff" stroke-width="1"/>
+  <!-- Medical Cross on Pediment -->
+  <rect x="15.5" y="11.5" width="3" height="4.5" rx="0.5" fill="#1eb8c9"/>
+  <rect x="14.5" y="12.5" width="5" height="2.5" rx="0.5" fill="#1eb8c9"/>
+  <!-- Foundation Line -->
+  <line x1="8" y1="25.5" x2="26" y2="25.5" stroke="#1eb8c9" stroke-width="1.5"/>
+
+  <!-- Typography -->
+  <text x="40" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#102a4d" letter-spacing="0.6">APEX INSTITUTIONAL</text>
+  <text x="40" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" fill="#0d7285" letter-spacing="0.3">HOSPITAL SUPPLY</text>
+</svg>

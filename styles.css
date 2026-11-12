@@ -1398,6 +1398,43 @@ img {
   box-shadow: 0 8px 18px rgba(30, 184, 201, 0.35);
 }
 
+/* Branded Solutions Header with Relatable Logos */
+.solution-brand-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  min-height: 48px;
+}
+
+.solution-logo-pill {
+  background: #ffffff;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(30, 184, 201, 0.35);
+  box-shadow: 0 4px 14px rgba(26, 69, 120, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  box-sizing: border-box;
+  transition: var(--transition-fast);
+}
+
+.portfolio-card:hover .solution-logo-pill {
+  border-color: var(--teal);
+  box-shadow: 0 6px 18px rgba(30, 184, 201, 0.22);
+  transform: translateY(-2px);
+}
+
+.solution-logo-img {
+  height: 24px;
+  max-height: 28px;
+  width: auto;
+  max-width: 175px;
+  object-fit: contain;
+  display: block;
+}
+
 .card-title {
   font-size: 1.25rem;
   font-weight: 800;
@@ -1432,7 +1469,7 @@ img {
 }
 
 /* ==========================================================================
-   ABOUT US: ENTERPRISE VISION, ZOHO LEGALIZATION & DEMAND FORECASTING
+   ABOUT US: ENTERPRISE VISION, AI-DRIVEN LEGALIZATION & DEMAND FORECASTING
    ========================================================================== */
 .about-enterprise-section {
   background: var(--navy);
