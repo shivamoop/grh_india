@@ -776,6 +776,12 @@ img {
   box-shadow: 0 4px 10px rgba(9, 75, 92, 0.25);
 }
 
+.floating-icon svg {
+  width: 22px;
+  height: 22px;
+  color: inherit;
+}
+
 .floating-badge-text {
   display: flex;
   flex-direction: column;
@@ -1193,11 +1199,20 @@ img {
   transition: all var(--transition-fast);
 }
 
-.indication-btn i {
+.indication-btn i,
+.indication-btn svg {
   font-size: 1.25rem;
+  width: 20px;
+  height: 20px;
   color: var(--navy);
   margin-top: 2px;
   transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.indication-btn:hover i,
+.indication-btn:hover svg {
+  color: var(--teal);
 }
 
 .indication-btn.active {
@@ -1206,7 +1221,8 @@ img {
   box-shadow: 0 4px 12px rgba(30, 184, 201, 0.15);
 }
 
-.indication-btn.active i {
+.indication-btn.active i,
+.indication-btn.active svg {
   color: var(--teal);
 }
 

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+  <!-- Topical Oxygen Therapy (cTOT) Icon -->
+  <!-- Oxygen O ring with ODS central hub -->
+  <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="2.2" />
+  <circle cx="8.5" cy="8.5" r="1.6" fill="currentColor" />
+  <!-- Subscript 2 for O2 -->
+  <path d="M16.5 10.5c0-.9.7-1.5 1.6-1.5.9 0 1.6.6 1.6 1.4 0 .8-.5 1.3-1.1 1.8l-2.1 1.8h3.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Continuous topical oxygen flow streams descending into wound bed -->
+  <path d="M5.5 16.5v3M8.5 15.5v4M11.5 16.5v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+  <!-- Cutaneous wound bed / skin surface layer -->
+  <path d="M2 21.5h20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+  <!-- Pure oxygen micro-bubble -->
+  <circle cx="17.5" cy="4.5" r="1.2" fill="currentColor" />
+</svg>
